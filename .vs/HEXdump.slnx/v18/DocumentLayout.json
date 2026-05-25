@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Documents\\.\u0432\u0441\u0451\u043C\u043E\u0451\\C\u002B\u002B\\HEXdumpold\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F1EE7C19-EC71-4E9B-AE65-DCAFAE94BAD1}|HEXdump\\HEXdump.vcxproj|C:\\Users\\User\\Documents\\.\u0432\u0441\u0451\u043C\u043E\u0451\\C\u002B\u002B\\HEXdumpold\\HEXdump\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1EE7C19-EC71-4E9B-AE65-DCAFAE94BAD1}|HEXdump\\HEXdump.vcxproj|solutionrelative:HEXdump\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 277,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\.\u0432\u0441\u0451\u043C\u043E\u0451\\C\u002B\u002B\\HEXdumpold\\HEXdump\\main.cpp",
+              "RelativeDocumentMoniker": "HEXdump\\main.cpp",
+              "ToolTip": "C:\\Users\\User\\Documents\\.\u0432\u0441\u0451\u043C\u043E\u0451\\C\u002B\u002B\\HEXdumpold\\HEXdump\\main.cpp",
+              "RelativeToolTip": "HEXdump\\main.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACwAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-18T12:03:35.866Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
