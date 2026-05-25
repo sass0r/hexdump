@@ -9,7 +9,7 @@
 
 ## 📋 About
 
-**hexdump-search_for_string** is a simple command-line tool inspired by the classic Unix `hexdump` utility. It allows you to:
+**hexdump** is a simple command-line tool inspired by the classic Unix `hexdump` utility. It allows you to:
 
 - 📄 View any binary file in a human-readable hexadecimal format
 - 🔎 Search for specific ASCII strings within binary data
@@ -38,7 +38,7 @@ git clone https://github.com/sass0r/hexdump.git
 cd hexdump
 
 # Open the solution file
-hexdump-search_for_string.slnx
+HEXdump.slnx
 ```
 
 Then press **F5** to build and run.
@@ -53,7 +53,7 @@ cd hexdump
 g++ -std=c++17 -O2 -o hexdump main.cpp
 
 # Run the utility
-./hexdump <filename> [search_string]
+./hexdump
 ```
 
 ## 📖 Usage
@@ -61,7 +61,8 @@ g++ -std=c++17 -O2 -o hexdump main.cpp
 ### Basic hex dump
 ```bash
 # Display hex content of a file
-./hexdump myfile.bin
+./hexdump
+file path:<full path of your file>
 ```
 
 **Example output:**
@@ -70,27 +71,12 @@ g++ -std=c++17 -O2 -o hexdump main.cpp
 00000010  b8 00 00 00 00 00 00 00  40 00 00 00 00 00 00 00  |........@.......|
 ```
 
-### Output format
-```
-[OFFSET]  [HEX BYTES]                 [ASCII VIEW]
-00000000  48 65 6c 6c 6f 20 57 6f    |Hello Wo|
-```
-
 ## ⚙️ Technical Details
 
 | Feature | Implementation |
 |---------|---------------|
 | **Language** | C++17 |
-| **Standard Library** | `<iostream>`, `<fstream>`, `<iomanip>`, `<string>`, `<vector>` |
+| **Standard Library** | `<iostream>`, `<fstream>`, `<iomanip>` |
 | **File I/O** | Binary mode (`std::ios::binary`) |
 | **Hex Formatting** | `std::hex`, `std::setw`, `std::setfill` |
 | **String Search** | Linear scan with `std::string::find` |
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/improvement`)
-3. Commit your changes (`git commit -m 'Add useful feature'`)
-4. Push and open a Pull Request
