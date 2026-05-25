@@ -70,27 +70,10 @@ g++ -std=c++17 -O2 -o hexdump main.cpp
 00000010  b8 00 00 00 00 00 00 00  40 00 00 00 00 00 00 00  |........@.......|
 ```
 
-### Search for a string
-```bash
-# Search for "password" inside a binary file
-./hexdump secret.dat "password"
-```
-
 ### Output format
 ```
 [OFFSET]  [HEX BYTES]                 [ASCII VIEW]
 00000000  48 65 6c 6c 6f 20 57 6f    |Hello Wo|
-```
-
-## 📁 Project Structure
-
-```
-📦 hexdump
- ┣ 📜 main.cpp                    # Main application logic
- ┣ 📜 hexdump-search_for_string.slnx  # Visual Studio solution
- ┣ 📜 hexdump-search_for_string.vcxproj  # VS project config
- ┣ 📂 x64/Debug/                  # Build output directory
- ┗ 📜 README.md                   # This file
 ```
 
 ## ⚙️ Technical Details
