@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="HEXdump/HEXdump.vcxproj" Id="f1ee7c19-ec71-4e9b-ae65-dcafae94bad1" />
+</Solution>
