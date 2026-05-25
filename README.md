@@ -1,7 +1,7 @@
 
-# hexdump-search_for_string 🔍
+# hexdump 🔍
 
-> A lightweight C++ console utility for viewing binary files in hexadecimal format and searching for ASCII strings within them.
+> A lightweight C++ console utility for viewing binary files in hexadecimal format.
 
 ![C++](https://img.shields.io/badge/C%2B%2B-17-blue?style=flat&logo=cplusplus)
 ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-lightgrey?style=flat)
