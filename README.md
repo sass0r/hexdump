@@ -3,29 +3,25 @@
 
 > A lightweight C++ console utility for viewing binary files in hexadecimal format.
 
-![C++](https://img.shields.io/badge/C%2B%2B-17-blue?style=flat&logo=cplusplus)
-![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-lightgrey?style=flat)
-![License](https://img.shields.io/github/license/sass0r/hexdump?style=flat)
-
-## 📋 About
+## About
 
 **hexdump** is a simple command-line tool inspired by the classic Unix `hexdump` utility. It allows you to:
 
-- 📄 View any binary file in a human-readable hexadecimal format
-- 🔎 Search for specific ASCII strings within binary data
-- 💻 Run as a lightweight console application with minimal dependencies
+- View any binary file in a human-readable hexadecimal format
+- Search for specific ASCII strings within binary data
+- Run as a lightweight console application with minimal dependencies
 
 Perfect for reverse engineering, debugging, file analysis, or educational purposes.
 
-## 🚀 Features
+## Features
 
-- ✅ Classic hex dump output (offset + hex bytes + ASCII representation)
-- ✅ String search functionality within binary files
-- ✅ Clean, readable console output
-- ✅ No external dependencies — pure C++ standard library
-- ✅ Cross-platform (Windows/Linux compatible)
+- Classic hex dump output (offset + hex bytes + ASCII representation)
+- String search functionality within binary files
+- Clean, readable console output
+- No external dependencies — pure C++ standard library
+- Cross-platform (Windows/Linux compatible)
 
-## 🛠️ Building from Source
+## Building from Source
 
 ### Prerequisites
 - C++17 compatible compiler (MSVC, GCC, or Clang)
