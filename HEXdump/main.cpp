@@ -1,17 +1,23 @@
 #include <iostream>
 #include <fstream>
 #include <iomanip>
+#include <string>
+#include <filesystem>
 
-int main(){
-	
+int main(){	
 	std::string   filepath;
 	unsigned char buffer[16];
 	size_t        offset = 0;
 	
 	while (true) {
 		std::cout << "file path:";
-		std::cin >> filepath;
+		std::getline(std::cin, filepath);
 		std::cout << std::endl;
+
+		for (int i = 0; i < filepath.size(); i++) {
+			if (filepath[i] == '"')
+				filepath.erase(i, 1);
+		}
 
 		std::ifstream openedfile(filepath, std::ios::binary);
 
@@ -44,5 +50,7 @@ int main(){
 
 			offset += 16;
 		}
+
+		offset = 0;
 	}
 }
