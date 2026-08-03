@@ -19,7 +19,6 @@ Perfect for reverse engineering, debugging, file analysis, or educational purpos
 - String search functionality within binary files
 - Clean, readable console output
 - No external dependencies — pure C++ standard library
-- Cross-platform (Windows/Linux compatible)
 
 ## 📖 Usage
 
