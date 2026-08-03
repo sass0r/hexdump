@@ -3,23 +3,36 @@
 #include <iomanip>
 #include <string>
 #include <filesystem>
+#include <Windows.h>
 
 int main(){	
-	std::string   filepath;
+	setlocale(LC_ALL, "");
+	SetConsoleCP(65001);
+	std::cout << GetConsoleCP() << std::endl;
+
+	std::string   filepath;	
 	unsigned char buffer[16];
 	size_t        offset = 0;
 	
 	while (true) {
 		std::cout << "file path:";
 		std::getline(std::cin, filepath);
-		std::cout << std::endl;
+
+		for (unsigned char c : filepath) std::cout << std::hex << (int)c << " ";
+		std::cout << std::dec << std::endl;
 
 		for (int i = 0; i < filepath.size(); i++) {
 			if (filepath[i] == '"')
 				filepath.erase(i, 1);
 		}
 
-		std::ifstream openedfile(filepath, std::ios::binary);
+		int bytes = MultiByteToWideChar(CP_UTF8, 0, filepath.data(), -1, nullptr, 0);
+
+		std::wstring wfilepath(bytes, L'\0');
+
+		MultiByteToWideChar(CP_UTF8, 0, filepath.data(), -1, wfilepath.data(), bytes);
+
+		std::ifstream openedfile(wfilepath, std::ios::binary);
 
 		while (openedfile.read(reinterpret_cast<char*>(buffer), 16) || openedfile.gcount() > 0) {
 			size_t bytesread = openedfile.gcount();
