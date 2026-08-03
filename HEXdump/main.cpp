@@ -8,8 +8,7 @@
 int main(){	
 	setlocale(LC_ALL, "");
 	SetConsoleCP(65001);
-	std::cout << GetConsoleCP() << std::endl;
-
+	
 	std::string   filepath;	
 	unsigned char buffer[16];
 	size_t        offset = 0;
@@ -17,9 +16,6 @@ int main(){
 	while (true) {
 		std::cout << "file path:";
 		std::getline(std::cin, filepath);
-
-		for (unsigned char c : filepath) std::cout << std::hex << (int)c << " ";
-		std::cout << std::dec << std::endl;
 
 		for (int i = 0; i < filepath.size(); i++) {
 			if (filepath[i] == '"')
